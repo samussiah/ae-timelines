@@ -247,7 +247,8 @@ export function syncControlInputs(preControlInputs, preSettings) {
         const thisFilter = {
             type: 'subsetter',
             value_col: d.value_col ? d.value_col : d,
-            label: d.label ? d.label : d.value_col ? d.value_col : d
+            label: d.label ? d.label : d.value_col ? d.value_col : d,
+            multiple: true,
         };
         //add the filter to the control inputs (as long as it isn't already there)
         var current_value_cols = preControlInputs
